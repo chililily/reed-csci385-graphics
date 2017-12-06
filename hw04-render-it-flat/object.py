@@ -232,14 +232,7 @@ class edge:
             pmid = p1+0.5*(p2-p1)
             p3mid = s+0.5*(xs[i]+xs[i+1])*d
 
-            # ps.pick_color()
-            # ps.draw_dot(pmid)
-
             subseg = (p1,p2)
-            # if object.hides(camera,p3mid,[self.face,self.twin]):
-            #     ps.draw_stroke(0.2,subseg)
-            # else:
-            #     ps.draw_stroke(1,subseg)
             if not object.hides(camera,p3mid,[self.face,self.twin]):
                 ps.draw_stroke(1,subseg)
 
